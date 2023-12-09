@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>DOM</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <section id="contenedor">
+            
+        </section>
+        <script>
+            var elemento = document.createElement("div");
+            elemento.innerHTML = "Hola";
+            var elemento2 = document.createElement("article");
+            elemento2.innerHTML = "Hola2";
+            document.getElementById("contenedor").appendChild(elemento);
+            
+            document.getElementById("contenedor").replaceChild(elemento2,elemento)
+        </script>
+    </body>
+</html>

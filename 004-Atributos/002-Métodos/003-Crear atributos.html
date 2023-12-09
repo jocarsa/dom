@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>DOM</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="contenedor">
+        
+        </div>
+        <script>
+            var elemento = document.createElement("div");
+            elemento.setAttribute("id","identificador");
+            elemento.setAttribute("class","miclase");
+            elemento.innerHTML = "Hola";
+            elemento.setAttribute("name","minombre");
+            elemento.setAttribute("contenteditable","true");
+            elemento.setAttribute("miatributo","verdadero");
+            document.getElementById("contenedor").append(elemento);
+        </script>
+    </body>
+</html>

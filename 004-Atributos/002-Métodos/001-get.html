@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>DOM</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="primero" class="miclase" name="minombre" style="color:red;"></div>
+        <script>
+            var elemento = document.getElementById("primero");
+            console.log(elemento);
+            console.log("Mi ID es: "+elemento.getAttribute("id"));
+            console.log("Mi clase es: "+elemento.getAttribute("class"));
+            console.log("Mi color es: "+elemento.getAttribute("style"));
+            console.log("Mi nombre es: "+elemento.getAttribute("name"));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>DOM</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <section id="contenedor">
+            
+        </section>
+        <script>
+            var elemento = document.createElement("div");
+            document.getElementById("contenedor").appendChild(elemento);
+            elemento.innerHTML = "Hola";
+            document.getElementById("contenedor").removeChild(elemento)
+        </script>
+    </body>
+</html>

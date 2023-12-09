@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>DOM</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <section id="contenedor">
+            <div class="contenido" id="uno" name="primero">
+                Uno
+            </div>
+            <div class="contenido" id="dos" name="segundo">
+                Dos
+            </div>
+            <div class="contenido" id="tres" name="tercero">
+                Tres
+            </div>
+        </section>
+        <script>
+            var colores = ["red","green","blue"];
+            var elementos = document.getElementsByClassName("contenido");
+            console.log(elementos)
+            for(let i = 0;i<elementos.length;i++){
+                elementos[i].style.color = colores[i];
+            }
+        </script>
+    </body>
+</html>
